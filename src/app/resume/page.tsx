@@ -121,14 +121,10 @@ const PageResume = () => {
         <section className={style.left_container}>
           <Subtitle title="Profile Summary">
             <p>
-              Versatile software developer with 5+ years of experience.
-              Proficient in Java, Kotlin (Android), React Native, ReactJS,
-              TypeScript, NextJS, NestJS, and currently specializing in VueJS.
-              Contributed to impactful projects across domains like education,
-              e-commerce, community apps, chatbots, financial platforms, and
-              food ordering systems. Aspire to explore challenging frameworks
-              such as Django, Flutter, Angular, Python ecosystems, and dive into
-              AR/VR development while mastering my current expertise.
+              Versatile software developer with 5+ years of experience. Aspire
+              to explore challenging frameworks such as Django, Flutter,
+              Angular, Python ecosystems, and dive into AR/VR development while
+              mastering my current expertise.
             </p>
           </Subtitle>
           <Subtitle title="Key Achievements">
