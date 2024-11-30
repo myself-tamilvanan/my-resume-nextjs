@@ -29,7 +29,7 @@ const PageResume = () => {
   );
 
   const renderExperienceFramework = (
-    { icon, projects, rating, roles, skills, title }: PropsExperienceFramework,
+    { icon, projects, rating, skills, title }: PropsExperienceFramework,
     index: number
   ) => (
     <li
