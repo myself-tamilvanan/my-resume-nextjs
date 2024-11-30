@@ -1,0 +1,156 @@
+@use "../styles/_variables.sass" as *
+
+.page_container
+  padding: $size-16px
+  max-width: 100vw
+
+  img
+    object-fit: contain
+
+  a
+    font-size: $size-16px
+    font-weight: 700
+    display: block
+
+.header_wrapper
+  border-bottom: $size-2px solid $dark-grey
+
+.profile_wrapper,
+.header_wrapper
+  gap: $size-24px
+  padding-bottom: $size-16px
+
+.contact_wrapper
+  margin-top: $size-12px
+  gap: $size-4px
+
+.social_media
+  margin-top: $size-8px
+  gap: $size-8px
+
+.subtitle_wrapper
+  margin-top: $size-16px
+
+  > h3
+    text-decoration: underline
+
+.main_container
+  display: grid
+  grid-template-columns: 65% 35%
+  gap: $size-24px
+  margin: 0 $size-16px
+
+.left_container
+
+  .project_experience
+    gap: $size-8px
+    padding: $size-16px
+    border: $size-1px solid $dark-border-grey
+    border-radius: $size-16px
+    margin-top: $size-16px
+
+    .top_wrapper
+      padding-bottom: $size-16px
+      width: 100%
+
+    .framework
+      gap: $size-12px
+
+    .sub_title
+      text-decoration: underline
+
+    .rating
+      display: grid
+      grid-template-columns: repeat(5, 0.5fr)
+      gap: $size-8px
+      max-width: 150px
+
+    .skill
+      margin-top: $size-8px
+
+    .container_project
+      flex-wrap: wrap
+      gap: $size-8px
+      margin-top: $size-8px
+
+      .list_project
+        display: flex
+        align-items: center
+        gap: $size-4px
+        color: $black
+        padding-right: $size-8px
+        border-right: $size-2px solid $dark-grey
+
+.right_container
+
+  .timeline_wrapper
+    font-size: $size-12px
+
+    .timeline_item
+      position: relative
+      display: flex
+      gap: $size-24px
+
+      &:last-child
+        .timeline_content
+          padding-bottom: 0
+
+          &:before
+            display: none
+
+    .timeline_org
+      gap: $size-8px
+      width: max-content
+
+    .timeline_position
+      margin-top: $size-8px
+
+    .timeline_period
+      text-align: end
+      flex: 0 0 150px
+      min-width: 0
+      overflow-wrap: break-word
+      padding-bottom: $size-16px
+      font-size: $size-14px
+
+    .timeline_content
+      flex: 1
+      position: relative
+      order: 1
+      padding-left: $size-24px
+      padding-bottom: $size-48px
+
+      &:before
+        content: ""
+        position: absolute
+        right: 100%
+        top: 0
+        height: 100%
+        width: $size-2px
+        background-color: $darker-grey
+
+      &:after
+        content: ""
+        position: absolute
+        left: calc(0px - 13px)
+        top: 0
+        width: $size-20px
+        height: $size-20px
+        background-color: $white
+        z-index: 1
+        border: $size-2px solid $darker-grey
+        border-radius: 50%
+
+    .timeline_title
+      margin-bottom: $size-8px
+
+    .timeline_desc
+      color: $dark-grey
+
+  .icon_wrapper
+    gap: $size-16px
+    margin: $size-16px 0
+    flex-wrap: wrap
+
+  .list_icon
+    gap: $size-12px
