@@ -125,7 +125,7 @@ const PageResume = () => {
               as the first employee in my organization and evolving through
               diverse roles and technologies. Proficient in Java, Kotlin
               (Android), React Native, ReactJS, TypeScript, NextJS, NestJS, and
-              currently specializing in VueJS. I've contributed to impactful
+              currently specializing in VueJS. I have contributed to impactful
               projects across domains like education, e-commerce, community
               apps, chatbots, financial platforms, and food ordering systems.
               Known for adapting to organizational needs and delivering results,
