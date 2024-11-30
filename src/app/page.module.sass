@@ -1,4 +1,5 @@
 @use "../styles/_variables.sass" as *
+@use "../styles/_mixins.sass" as *
 
 .page_container
   padding: $size-16px
@@ -41,8 +42,8 @@
   margin: 0 $size-16px
 
   @include mixin-responsive
-  display: flex
-  flex-direction: column
+    display: flex
+    flex-direction: column
 
 .left_container
 
