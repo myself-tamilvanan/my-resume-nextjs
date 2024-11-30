@@ -1,0 +1,31 @@
+/* Responsive mixin */
+@mixin mixin-responsive($size: 775px)
+  @media (max-width: $size)
+    @content
+
+/* Ellipsis mixin */
+@mixin mixin-ellipsis($line-clamp: 1, $display: inline-block, $width: 100%)
+  display: $display
+  max-width: $width
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+  word-wrap: normal
+  line-clamp: $line-clamp
+
+/* Circle mixin */
+@mixin mixin-circle($size)
+  width: $size
+  height: $size
+  border-radius: $size * 0.5
+  overflow: hidden
+
+/* Animation mixin */
+@mixin inline-animation($duration)
+  $name: inline-#{unique-id()}
+
+  @keyframes #{$name}
+    animation-name: $name
+    animation-duration: $duration
+    animation-iteration-count: infinite
+    @content
