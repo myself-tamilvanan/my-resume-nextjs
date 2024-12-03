@@ -121,10 +121,11 @@ const PageResume = () => {
         <section className={style.left_container}>
           <Subtitle title="Profile Summary">
             <p>
-              Versatile software developer with 5+ years of experience. Aspire
-              to explore challenging frameworks such as Django, Flutter,
-              Angular, Python ecosystems, and dive into AR/VR development while
-              mastering my current expertise.
+              Versatile software developer with 5+ years of experience, skilled
+              in delivering innovative solutions. Passionate about tackling
+              cutting-edge frameworks like Django, Flutter, Angular, and the
+              Python ecosystem. Eager to expand into AR/VR development while
+              refining current expertise.
             </p>
           </Subtitle>
           <Subtitle title="Key Achievements">
@@ -303,7 +304,7 @@ const ARR_EXPERIENCE_FRAMEWORK: PropsExperienceFramework[] = [
       "NextJS Components",
       "Typescript",
       "SSR",
-      "IST",
+      "ISR",
       "SSG",
       "CSR",
       "REST API",
