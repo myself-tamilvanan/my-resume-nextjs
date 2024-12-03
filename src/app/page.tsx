@@ -110,7 +110,7 @@ const PageResume = () => {
             alt="Tamilvanan Rasappan"
             width={100}
             height={100}
-            style={{ borderRadius: "8px" }}
+            style={{ borderRadius: "8px", objectFit: "fill" }}
           />
           <ul className={`flex ${style.social_media}`}>
             {ARR_SOCIAL_MEDIA.map(renderSocialMedia)}
@@ -131,7 +131,9 @@ const PageResume = () => {
             {ARR_KEY_ACHIEVEMENTS.map(renderAchievement)}
           </Subtitle>
           <Subtitle title="Projects">
-            {ARR_EXPERIENCE_FRAMEWORK.map(renderExperienceFramework)}
+            <ul className={`flex-col ${style.container_project}`}>
+              {ARR_EXPERIENCE_FRAMEWORK.map(renderExperienceFramework)}
+            </ul>
           </Subtitle>
         </section>
         <section className={style.right_container}>
@@ -433,78 +435,78 @@ const ARR_EXPERIENCE: PropsExperience[] = [
 ];
 
 const ARR_AGILE: PropsIcon[] = [
-  { icon: assets.img_agile_jira, label: "jira" },
-  { icon: assets.img_agile_github, label: "github" },
-  { icon: assets.img_agile_bitbucket, label: "bitbucket" },
-  { icon: assets.img_agile_gitlab, label: "gitlab" },
+  { icon: assets.img_agile_jira, label: "Jira" },
+  { icon: assets.img_agile_github, label: "Github" },
+  { icon: assets.img_agile_bitbucket, label: "Bitbucket" },
+  { icon: assets.img_agile_gitlab, label: "Gitlab" },
 ];
 
 const ARR_CODE_ARCHITECTURE: PropsIcon[] = [
   {
     icon: assets.img_architecture_microservices,
-    label: "microservices",
+    label: "Microservices",
   },
-  { icon: assets.img_architecture_mono_repo, label: "mono_repo" },
-  { icon: assets.img_architecture_mvc, label: "mvc" },
-  { icon: assets.img_architecture_atomic, label: "atomic" },
-  { icon: assets.img_architecture_nx_tool, label: "nx tool" },
-  { icon: assets.img_architecture_turbo, label: "turbo" },
+  { icon: assets.img_architecture_mono_repo, label: "Mono Repo" },
+  { icon: assets.img_architecture_mvc, label: "Mvc" },
+  { icon: assets.img_architecture_atomic, label: "Atomic" },
+  { icon: assets.img_architecture_nx_tool, label: "Nx tool" },
+  { icon: assets.img_architecture_turbo, label: "Turbo" },
 ];
 
 const ARR_DATABASE: PropsIcon[] = [
-  { icon: assets.img_db_mysql, label: "mysql" },
-  { icon: assets.img_db_postgreql, label: "postgre sql" },
-  { icon: assets.img_db_prisma_orm, label: "prisma orm" },
+  { icon: assets.img_db_mysql, label: "Mysql" },
+  { icon: assets.img_db_postgreql, label: "Postgresql" },
+  { icon: assets.img_db_prisma_orm, label: "Prisma orm" },
 ];
 
 const ARR_FRAMEWORK: PropsIcon[] = [
-  { icon: assets.img_framework_nextjs, label: "nextjs" },
-  { icon: assets.img_framework_react_js, label: "react_js" },
-  { icon: assets.img_framework_nestjs, label: "nestjs" },
-  { icon: assets.img_framework_android, label: "android" },
-  { icon: assets.img_framework_flutter, label: "flutter" },
-  { icon: assets.img_framework_vuejs, label: "vue js" },
-  { icon: assets.img_framework_django, label: "django" },
-  { icon: assets.img_framework_react_native, label: "react_native" },
-  { icon: assets.img_framework_expressjs, label: "express js" },
+  { icon: assets.img_framework_nextjs, label: "Nextjs" },
+  { icon: assets.img_framework_react_js, label: "ReactJs" },
+  { icon: assets.img_framework_nestjs, label: "Nestjs" },
+  { icon: assets.img_framework_android, label: "Android" },
+  { icon: assets.img_framework_flutter, label: "Flutter" },
+  { icon: assets.img_framework_vuejs, label: "Vue js" },
+  { icon: assets.img_framework_django, label: "Django" },
+  { icon: assets.img_framework_react_native, label: "React Native" },
+  { icon: assets.img_framework_expressjs, label: "Express js" },
 ];
 
 const ARR_HOSTING: PropsIcon[] = [
-  { icon: assets.img_hosting_apache, label: "apache" },
-  { icon: assets.img_hosting_aws_ec2, label: "aws_ec2" },
-  { icon: assets.img_hosting_caddy, label: "caddy" },
-  { icon: assets.img_hosting_docker, label: "docker" },
-  { icon: assets.img_hosting_firebase, label: "firebase" },
-  { icon: assets.img_hosting_nginx, label: "nginx" },
-  { icon: assets.img_hosting_playstore, label: "playstore spl" },
-  { icon: assets.img_hosting_private_server, label: "private server" },
-  { icon: assets.img_hosting_vercel, label: "vercel" },
+  { icon: assets.img_hosting_apache, label: "Apache" },
+  { icon: assets.img_hosting_aws_ec2, label: "Aws EC2" },
+  { icon: assets.img_hosting_caddy, label: "Caddy" },
+  { icon: assets.img_hosting_docker, label: "Docker" },
+  { icon: assets.img_hosting_firebase, label: "Firebase" },
+  { icon: assets.img_hosting_nginx, label: "Nginx" },
+  { icon: assets.img_hosting_playstore, label: "Play store" },
+  { icon: assets.img_hosting_private_server, label: "Private server" },
+  { icon: assets.img_hosting_vercel, label: "Vercel" },
 ];
 
 const ARR_IDE: PropsIcon[] = [
-  { icon: assets.img_ide_visual_studio_code, label: "visual studio code" },
-  { icon: assets.img_ide_pycharm, label: "pycharm" },
-  { icon: assets.img_ide_android_studio, label: "android studio" },
-  { icon: assets.img_ide_intellij, label: "intellij" },
+  { icon: assets.img_ide_visual_studio_code, label: "Visual Studio Code" },
+  { icon: assets.img_ide_pycharm, label: "Pycharm" },
+  { icon: assets.img_ide_android_studio, label: "Android studio" },
+  { icon: assets.img_ide_intellij, label: "Intellij" },
 ];
 
 const ARR_LANGUAGES: PropsIcon[] = [
-  { icon: assets.img_lang_typescript, label: "typescript" },
-  { icon: assets.img_lang_javascript, label: "javascript" },
-  { icon: assets.img_lang_kotlin, label: "kotlin" },
-  { icon: assets.img_lang_java, label: "java" },
-  { icon: assets.img_lang_dart, label: "dart" },
-  { icon: assets.img_lang_sass, label: "sass" },
+  { icon: assets.img_lang_typescript, label: "Typescript" },
+  { icon: assets.img_lang_javascript, label: "Javascript" },
+  { icon: assets.img_lang_kotlin, label: "Kotlin" },
+  { icon: assets.img_lang_java, label: "Java" },
+  { icon: assets.img_lang_dart, label: "Dart" },
+  { icon: assets.img_lang_sass, label: "Sass" },
 ];
 
 const ARR_TECHNICAL_SKILL: PropsIcon[] = [
-  { icon: assets.img_tech_pwa, label: "pwa" },
-  { icon: assets.img_tech_firebase, label: "firebase" },
-  { icon: assets.img_tech_graph_ql, label: "graph ql" },
-  { icon: assets.img_tech_react_query, label: "react query" },
-  { icon: assets.img_tech_redux, label: "redux" },
-  { icon: assets.img_tech_rest_api, label: "rest api" },
-  { icon: assets.img_tech_swagger, label: "swagger" },
+  { icon: assets.img_tech_pwa, label: "Pwa" },
+  { icon: assets.img_tech_firebase, label: "Firebase" },
+  { icon: assets.img_tech_graph_ql, label: "Graphql" },
+  { icon: assets.img_tech_react_query, label: "React query" },
+  { icon: assets.img_tech_redux, label: "Redux" },
+  { icon: assets.img_tech_rest_api, label: "Rest api" },
+  { icon: assets.img_tech_swagger, label: "Swagger" },
 ];
 
 interface PropsExperience {
