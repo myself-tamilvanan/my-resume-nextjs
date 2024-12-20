@@ -53,7 +53,7 @@ const PageResume = () => {
           readOnly
         />
       </section>
-      <h4 className={style.sub_title}>Skills: </h4>
+      {/* <h4 className={style.sub_title}>Skills: </h4> */}
       <p className={style.skill}>{skills.join("  ●  ")}</p>
       <h4 className={style.sub_title}>Projects: </h4>
       <ul className={`flex ${style.container_project}`}>

@@ -13,6 +13,9 @@
     display: block
     color: $primary
 
+  p
+    font-size: $size-20px
+
 .header_wrapper
   border-bottom: $size-2px solid $dark-grey
 
@@ -41,9 +44,9 @@
     color: $primary
 
 .main_container
-  display: grid
-  grid-template-columns: 63% 35%
-  gap: $size-24px
+  display: flex
+  flex-direction: column
+  gap: 0
 
   @include mixin-responsive
     display: flex
@@ -98,7 +101,7 @@
 .right_container
 
   .timeline_wrapper
-    font-size: $size-12px
+    font-size: $size-16px
 
     .timeline_item
       position: relative
