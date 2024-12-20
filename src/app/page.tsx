@@ -145,46 +145,48 @@ const PageResume = () => {
               </ol>
             </div>
           </Subtitle>
-          <Subtitle title="Frameworks">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_FRAMEWORK.map(renderIcon)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="Languages">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_LANGUAGES.map(renderIcon)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="Code Architecture">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_CODE_ARCHITECTURE.map(renderIconLabel)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="Application Hosting">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_HOSTING.map(renderIcon)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="Database">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_DATABASE.map(renderIcon)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="Technical Skill">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_TECHNICAL_SKILL.map(renderIcon)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="Agile">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_AGILE.map(renderIcon)}
-            </ul>
-          </Subtitle>
-          <Subtitle title="IDE">
-            <ul className={`flex ${style.icon_wrapper}`}>
-              {ARR_IDE.map(renderIcon)}
-            </ul>
-          </Subtitle>
+          <section className={style.skill_container}>
+            <Subtitle title="Frameworks">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_FRAMEWORK.map(renderIcon)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="Languages">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_LANGUAGES.map(renderIcon)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="Code Architecture">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_CODE_ARCHITECTURE.map(renderIconLabel)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="Application Hosting">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_HOSTING.map(renderIcon)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="Database">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_DATABASE.map(renderIcon)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="Technical Skill">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_TECHNICAL_SKILL.map(renderIcon)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="Agile">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_AGILE.map(renderIcon)}
+              </ul>
+            </Subtitle>
+            <Subtitle title="IDE">
+              <ul className={`flex ${style.icon_wrapper}`}>
+                {ARR_IDE.map(renderIcon)}
+              </ul>
+            </Subtitle>
+          </section>
         </section>
       </section>
     </section>
